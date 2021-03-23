@@ -1,0 +1,6 @@
+# Compiled Typescript files
+*.js
+*.js.map
+
+# Config
+!*.config.js

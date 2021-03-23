@@ -1,0 +1,45 @@
+{
+  "name": "video-downloader",
+  "description": "Video downloader extension for Google Chrome",
+  "homepage": "https://github.com/kvandenhaute/video-downloader",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rollup --config",
+    "tsc:compile": "tsc --project .",
+    "tsc:fix": "eslint --fix --ext .ts 'src/**/*.ts' 'tests/**/*.ts'",
+    "tsc:watch": "tsc -w --project .",
+    "evergreen": "ncu -u && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvandenhaute/video-downloader.git"
+  },
+  "author": "Kevin Van Den Haute <kevin@vandenhaute.me>",
+  "license": "ISC",
+  "engines": {
+    "node": "14.16.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "./git-hooks/prepare-commit-msg.sh $HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.ts": "eslint --ext .ts --cache --fix"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.19.0",
+    "@typescript-eslint/parser": "4.19.0",
+    "copyfiles": "2.4.1",
+    "core-js": "3.9.1",
+    "eslint": "7.22.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "husky": "5.2.0",
+    "lint-staged": "10.5.4",
+    "npm-check-updates": "11.3.0",
+    "tslib": "2.1.0",
+    "typescript": "4.2.3",
+    "whatwg-fetch": "3.6.2"
+  }
+}

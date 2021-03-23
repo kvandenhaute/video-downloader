@@ -1,0 +1,14 @@
+# package directories
+node_modules
+
+# IDE directories / files
+.idea/
+*.iml
+
+.eslintcache
+
+# Compiled Typescript files
+*.js
+*.js.map
+
+*.DS_Store

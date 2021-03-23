@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "lib": ["es6", "DOM"],
+    "sourceMap": true,
+    "importsNotUsedAsValues": "error",
+    "strict": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true
+  }
+}
